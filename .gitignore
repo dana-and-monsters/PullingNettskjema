@@ -1,7 +1,11 @@
 nettskjema_token.txt
 copen_netts.tsv
-Copendata
-CompressedData
+Concert_participants_installations.csv
+Copendata/
+Concert_MusicLab/
+InstOrdData/
+PreConcert_MusicLab/
+CompressedData/
 Test_API
 .ipynb_checkpoints/
 .DS_Store
