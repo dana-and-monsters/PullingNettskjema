@@ -1,0 +1,22 @@
+MusicLab Nettskjema data notes
+Finn Upham, 2021-11-03
+
+This folder contains recordings of participants mobile phone sensors collected via the MusicLab app (version 0.0.17) captured on October 26, 2021, as part of the DSQ Copenhagen concert experiments. 
+
+Each file contains at most one minute of sensor recordings from the accelerometer and gyroscope from a single phone. Also included are geolocation recordings within similar intervals. 
+
+The files have been reorganised from their original formate as collected on Nettskjema (form 141510). The code used to collect and rearrange the data is posted publically here: https://github.com/finn42/PullingNettskjema/blob/main/PullingMusicLab.ipynb
+
+The recordings are of two intervals: 
+
+	Preconcert: from '2021-10-26T18:26:55.000+0200', the first recording of activity that could occured at the concert hall, when volunteers started helping participants prepare their mobiles for recordings. This interval ends at the intended start time of the concert, '2021-10-26T19:30:00.000+0200'. This corresponds to the submission ID range of [16648859,16651235).
+
+	Concert: from the start of intended concert begining, '2021-10-26T19:30:00.000+0200', to a little bit after the performance had ended, '2021-10-26T22:29:56.000+0200'. (This may be half an hour or 20 minutes after the concert. Need to confirm with time stamps from audio recording.) Corresponding submission ID range: [16651235,16672589].
+
+Within these two folders, mobile sensor recordings are grouped by where they were recorded from: Hall or Remote. Using data from form 225781 (0 Physically Present Participant Number), installation IDs were associated with valid concert questionnaire participant numbers. MusicLab files associated with valid participant IDs are in the Hall folder, those without in person concert audience participant IDs are in the Remote folder. The list of associations between Participant ID and installation IDs is in file Concert_participants_installations.csv
+
+Within the Hall and Remote folders, the files were further organised by installation ID. Within each folder individual csv files are named by unique submission ID, installation ID and finally datatype.
+
+2021-11-03 
+Division of installations between Hall and Remote has been revised using geolocation data, comparison with questionnaire responses, and the shape of mobile data collected given the reported social connections present for in-hall participants with challenging attributions.
+
